@@ -315,6 +315,22 @@ form {
   font-weight: bold;
 }
 
+.firstName {
+  display: block;
+}
+
+.lastName {
+  display: block;
+}
+
+.email {
+  display: block;
+}
+
+.comments {
+  display: block;
+}
+
 /* --------------------------Trivia page-------------------------- */
 .triviaContainer {
   width: 100%;
@@ -453,6 +469,19 @@ form {
   }
   .mediaContainer .videoGallery img {
     width: 160px;
+  }
+  /* --------------------------Contact Us page-------------------------- */
+  .contactUsContainer #contactUsSubmitForm .form-group .firstName {
+    display: none;
+  }
+  .contactUsContainer #contactUsSubmitForm .form-group .lastName {
+    display: none;
+  }
+  .contactUsContainer #contactUsSubmitForm .form-group .email {
+    display: none;
+  }
+  .contactUsContainer #contactUsSubmitForm .form-group .comments {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
