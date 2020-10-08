@@ -1,0 +1,458 @@
+@import url("https: //fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Color Theme Swatches in Hex */
+/* fonts */
+/* banner */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #9453A6;
+  font-family: "Pattaya", sans-serif;
+}
+
+/* --------------------------Button-------------------------- */
+button {
+  display: block;
+  margin: 10px;
+  background-color: #BCBF3F;
+  color: #F2F2F2;
+  border: none;
+  padding: 6px 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #a6a802;
+}
+
+/* --------------------------Footer & Header page-------------------------- */
+.header-background {
+  width: 100%;
+  height: auto;
+  background-color: #F2CC0F;
+  font-family: "Henny Penny", cursive;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-size: 2em;
+}
+
+.header .logo img {
+  float: left;
+}
+
+footer {
+  font-family: "Roboto", sans-serif;
+  background-color: #F2F2F2;
+  color: #9453A6;
+  width: 100vw;
+  height: 10vh;
+  font-size: 1.5em;
+  margin-top: 200px;
+}
+
+/* --------------------------Home page-------------------------- */
+/* ---------container--------- */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 40% 35% 25%;
+      grid-template-rows: 40% 35% 25%;
+  /*10% 10% 70% 15% 10% 5%;*/
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-areas: "main main main main" "sideleft sideleft sideright sideright" "box1 box1 box1 box1";
+  grid-gap: 20px;
+}
+
+/* ---------item--------- */
+.item {
+  color: #F2F2F2;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ---------sideleft--------- */
+.sideleft {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: sideleft;
+  display: block;
+}
+
+/* ---------main--------- */
+.main {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: main;
+  color: #F2CC0F;
+  text-align: center;
+}
+
+.main .imgMobile {
+  display: none;
+}
+
+.main img {
+  display: none;
+}
+
+.main h3 {
+  margin: 0;
+  padding: 0;
+  color: #9453A6;
+  font-family: "Pattaya", sans-serif;
+}
+
+.main #carouselExampleCaptions {
+  display: block;
+}
+
+/* ---------sideright--------- */
+.sideright {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: sideright;
+  top: 0;
+  display: block;
+}
+
+/* ---------box1--------- */
+.box1 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: box1;
+  display: block;
+}
+
+/* ---------box1Mobile--------- */
+.box1Mobile {
+  display: none;
+}
+
+/* ---------box2Mobile--------- */
+.box2Mobile {
+  display: none;
+}
+
+/* --------------------------About page-------------------------- */
+.aboutContainer {
+  width: 100%;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.aboutSection {
+  background-color: #9453A6;
+  color: #F2F2F2;
+  padding: 30px;
+  margin: auto;
+  width: 80vw;
+  border: 5px solid #0D0D0D;
+}
+
+.aboutSection h2 {
+  font-size: 2em;
+  color: #F2CC0F;
+}
+
+.aboutSection h4 {
+  font-size: 1.5em;
+  color: #F2CC0F;
+}
+
+.aboutContainer .aboutSection .aboutPara {
+  font-size: 1em;
+  text-align: justify;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.aboutContainer .aboutSection .aboutPara .aboutImgPara {
+  width: 300px;
+  float: left;
+  margin-right: 15px;
+  border: 8px solid #F2CC0F;
+}
+
+.aboutContainer .aboutSection .aboutPara .aboutImgParaLaToya {
+  width: 300px;
+  height: 50vh;
+  float: right;
+  margin-right: 15px;
+  border: 5px solid #F2F2F2;
+}
+
+/* --------------------------Media page-------------------------- */
+.mediaContainer {
+  width: 100%;
+  padding: 30px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.mediaContainer h2 {
+  font-size: 2em;
+  color: #F2CC0F;
+}
+
+.mediaContainer .imageGallery,
+.videoGallery {
+  margin: 5px 130px;
+  width: 85%;
+  padding: 30px;
+}
+
+.mediaContainer .imageGallery img {
+  width: 230px;
+  height: 20vh;
+  padding: 5px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.mediaContainer .imageGallery img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.mediaContainer .videoGallery img {
+  width: 230px;
+  height: 20vh;
+  padding: 5px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.mediaContainer .videoGallery img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.mediaContainer .mydiv .lightboxcontainer {
+  width: 100%;
+  text-align: left;
+}
+
+.mediaContainer .mydiv .lightboxleft {
+  width: 40%;
+  float: left;
+}
+
+.mediaContainer .mydiv .lightboxright {
+  width: 60%;
+  float: left;
+}
+
+.mediaContainer .mydiv .lightboxright iframe {
+  min-height: 390px;
+}
+
+.mediaContainer .mydiv .divtext {
+  margin: 36px;
+}
+
+/* --------------------------FAQ page-------------------------- */
+.faqContainer {
+  padding: 30px;
+  margin: 0 auto;
+  width: 80vw;
+}
+
+#accordion {
+  color: #9453A6;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  text-align: left;
+}
+
+/* --------------------------Contact Us page-------------------------- */
+.contactUsContainer {
+  width: 100%;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+form {
+  background-color: #9453A6;
+  padding: 30px;
+  border-radius: 10px;
+  color: #F2CC0F;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+#emailHelp {
+  color: #F2F2F2;
+  font-weight: bold;
+}
+
+/* --------------------------Trivia page-------------------------- */
+.triviaContainer {
+  width: 100%;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.triviaContainer .triviaPara {
+  text-align: left;
+  font-size: 1em;
+  text-align: justify;
+  line-height: 1.5;
+  margin: 10px 80px;
+}
+
+.triviaContainer .triviaParaAnswersColors {
+  text-align: left;
+  font-size: 1em;
+  text-align: justify;
+  line-height: 1.5;
+  margin: 10px 100px;
+}
+
+.triviaContainer .triviaButton {
+  margin-left: 70px;
+}
+
+/* ---------------------------------------------------- Mobile ---------------------------------------------------- */
+@media (max-width: 550px) {
+  footer {
+    font-size: 1em;
+    margin-top: 80px;
+    height: 7vh;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  /* --------------------------Button Mobile-------------------------- */
+  button {
+    display: block;
+    margin: 5px;
+    padding: 3px 5px;
+    font-size: 0.7em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+  }
+  /* ---------container--------- */
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    -ms-grid-rows: 40% 30% 30%;
+        grid-template-rows: 40% 30% 30%;
+    -ms-grid-columns: 25% 25% 25% 25%;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-areas: "main main main main" "box1Mobile box1Mobile box1Mobile box1Mobile" "box2Mobile box2Mobile box2Mobile box2Mobile";
+    grid-gap: 20px;
+  }
+  /* --------------------------Home mobile page-------------------------- */
+  /* ---------main--------- */
+  .main {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: main;
+    text-align: center;
+  }
+  .main h3 {
+    font-size: 2em;
+  }
+  .main img {
+    display: block;
+  }
+  .main #carouselExampleCaptions {
+    display: none;
+  }
+  /* ---------box1Mobile--------- */
+  .box1Mobile {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: box1Mobile;
+    display: block;
+    margin: 0 2.5%;
+  }
+  /* ---------box2Mobile--------- */
+  .box2Mobile {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: box2Mobile;
+    display: block;
+    margin: 0 2.5%;
+  }
+  /* ---------Hide sideright--------- */
+  .sideright {
+    display: none;
+  }
+  /* ---------Hide sideleft--------- */
+  .sideleft {
+    display: none;
+  }
+  /* --------- Hide box1--------- */
+  .box1 {
+    display: none;
+  }
+  /* --------------------------About Mobile page-------------------------- */
+  .aboutContainer .aboutSection .aboutPara .aboutImgPara {
+    width: 200px;
+    border: 3px solid #F2F2F2;
+  }
+  /* --------------------------Media Mobile page-------------------------- */
+  .mediaContainer .lightboxleft {
+    width: 100%;
+  }
+  .mediaContainer .lightboxright {
+    width: 100%;
+  }
+  .mediaContainer .divtext {
+    margin: 12px;
+  }
+  .mediaContainer h2 {
+    font-size: 1em;
+    color: #F2CC0F;
+  }
+  .mediaContainer .imageGallery,
+  .videoGallery {
+    margin-left: 40px;
+    width: 80%;
+    padding: 30px;
+  }
+  .mediaContainer .imageGallery img {
+    width: 160px;
+  }
+  .mediaContainer .videoGallery img {
+    width: 160px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
