@@ -541,6 +541,7 @@ form {
   /* --------------------------quizPopUpMobile page-------------------------- */
   .quizDiv .buttons {
     padding: 140px;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
