@@ -60,7 +60,7 @@ footer {
   font-family: "Roboto", sans-serif;
   background-color: #F2F2F2;
   color: #9453A6;
-  width: 100vw;
+  width: 100%;
   height: 10vh;
   font-size: 1.5em;
   margin-top: 200px;
@@ -447,16 +447,17 @@ form {
     grid-gap: 20px;
   }
   /* --------------------------Home mobile page-------------------------- */
-  /* ---------main--------- */
+  /* ---------mainMobile--------- */
   .main {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
     grid-area: main;
-    text-align: center;
+    border: 3px solid green;
   }
   .main h3 {
     font-size: 2em;
+    text-align: center;
   }
   .main img {
     display: block;
@@ -472,6 +473,7 @@ form {
     grid-area: box1Mobile;
     display: block;
     margin: 0 2.5%;
+    border: 3px solid green;
   }
   /* ---------box2Mobile--------- */
   .box2Mobile {
@@ -481,6 +483,7 @@ form {
     grid-area: box2Mobile;
     display: block;
     margin: 0 2.5%;
+    border: 3px solid green;
   }
   /* ---------Hide sideright--------- */
   .sideright {

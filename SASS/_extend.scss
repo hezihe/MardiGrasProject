@@ -81,7 +81,7 @@ footer {
     color: $color-theme_Colors-1-hex;
     // position: sticky;
     // bottom: 0;
-    width: 100vw;
+    width: 100%; //scroll Right bug1 fix from 100vw to 100%;
     height: 10vh;
     font-size: $font-medium-Size;
     margin-top: 200px;
@@ -490,14 +490,18 @@ form {
 
     /* --------------------------Home mobile page-------------------------- */
 
-    /* ---------main--------- */
+    /* ---------mainMobile--------- */
     .main {
         grid-area: main;
-        text-align: center;
+        border: 3px solid green;
+        // margin: auto;
+        // width: 50%;
+        // padding: 10px;
     }
 
     .main h3 {
         font-size: 2em;
+        text-align: center;
         // margin: 0 2%;
     }
 
@@ -546,14 +550,18 @@ form {
     .box1Mobile {
         grid-area: box1Mobile;
         display: block;
-        margin: 0 2.5%;
+        margin: 0 2.5%; //todo
+        border: 3px solid green;
+
     }
 
     /* ---------box2Mobile--------- */
     .box2Mobile {
         grid-area: box2Mobile;
         display: block;
-        margin: 0 2.5%;
+        margin: 0 2.5%; //todo
+        border: 3px solid green;
+
     }
 
     /* ---------Hide sideright--------- */
