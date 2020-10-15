@@ -109,7 +109,8 @@ footer {
         "sideleft sideleft sideright sideright"
         "box1 box1 box1 box1";
     // "footer footer footer footer";
-    grid-gap: 20px;
+    grid-gap: 10px;
+
 }
 
 /* ---------item--------- */
@@ -140,11 +141,7 @@ footer {
     // background-color: $color-theme_Colors-2-hex;
 }
 
-.main .imgMobile {
-    display: none;
-}
-
-.main img {
+.container-fluid .row .mainMobile {
     display: none;
 }
 
@@ -155,7 +152,7 @@ footer {
     font-family: $font-title-Pattaya;
 }
 
-.main #carouselExampleCaptions {
+.main {
     display: block;
 }
 
@@ -183,12 +180,12 @@ footer {
 }
 
 /* ---------box1Mobile--------- */
-.box1Mobile {
+.container-fluid .row .box1Mobile {
     display: none;
 }
 
 /* ---------box2Mobile--------- */
-.box2Mobile {
+.container-fluid .row .box2Mobile {
     display: none;
 }
 
@@ -473,96 +470,49 @@ form {
     }
 
     /* ---------container Mobile--------- */
-    .container {
-        width: 100%;
-        margin: 0 auto;
-        padding: 20px;
-        grid-template-rows: 40% 30% 30%;
-        grid-template-columns: 25% 25% 25% 25%;
-        grid-template-areas:
-            "main main main main"
-            "box1Mobile box1Mobile box1Mobile box1Mobile"
-            "box2Mobile box2Mobile box2Mobile box2Mobile";
-
-        // "footer footer footer footer";
-        grid-gap: 20px;
-        
-    }
+    // .container {
+    //     width: 100%;
+    //     grid-template-rows: 40% 30% 30%;
+    //     grid-template-columns: 25% 25% 25% 25%;
+    //     grid-template-areas:
+    //         "main main main main"
+    //         "box1Mobile box1Mobile box1Mobile box1Mobile"
+    //         "box2Mobile box2Mobile box2Mobile box2Mobile";
+    // }
 
     /* --------------------------Home mobile page-------------------------- */
 
     /* ---------mainMobile--------- */
-    .main {
-        grid-area: main;
-        border: 3px solid green;
-        // margin: auto;
-        // width: 50%;
-        // padding: 10px;
+    .container-fluid .row .mainMobile {
+        display: block;
     }
 
-    .main h3 {
+    .container-fluid .row .mainMobile h3 {
         font-size: 2em;
         text-align: center;
-        // margin: 0 2%;
-    }
-
-    .main img {
-        // margin-left: auto;
-        // margin-right: auto;
-        // width: 80%;
-        // margin: 0 10%;
-        // position: absolute;
-        // top: 30%;
-        // left: 30%;
-        display: block;
-        //     display: flex;
-        //     justify-content: center;
-        //     align-items: center;
-    }
-
-    // .main .imgMobile {
-    //     // margin-left: auto;
-    //     // margin-right: auto;
-    //     // width: 80%;
-    //     // margin: 0;
-    //     // position: absolute;
-    //     // top: 30%;
-    //     // left: 30%;
-    //     // display: flex;
-    //     // justify-content: center;
-    //     // align-items: center;
-    //     display: block;
-    //     margin: auto;
-    // }
-
-    // .main .imgMobile{
-    //      margin: auto;
-    //      width: 80%;
-    //      border: 3px solid green;
-    //      padding: 10px;
-    // }
-
-    //hide main slider 
-    .main #carouselExampleCaptions {
-        display: none;
+        color: $color-theme_Colors-1-hex;
+        font-family: $font-title-Pattaya;
     }
 
     /* ---------box1Mobile--------- */
-    .box1Mobile {
-        grid-area: box1Mobile;
+    .container-fluid .row .box1Mobile {
+        // grid-area: box1Mobile;
         display: block;
-        margin: 0 2.5%; //todo
-        border: 3px solid green;
-
+        margin-top: 30px;
+        left: 0;
     }
 
     /* ---------box2Mobile--------- */
-    .box2Mobile {
-        grid-area: box2Mobile;
+    .container-fluid .row .box2Mobile {
+        // grid-area: box2Mobile;
         display: block;
-        margin: 0 2.5%; //todo
-        border: 3px solid green;
+        margin-top: 30px;
+        left: 0;
+    }
 
+    /*---------hide main---------*/
+    .main {
+        display: none;
     }
 
     /* ---------Hide sideright--------- */
@@ -640,5 +590,4 @@ form {
     .quizDiv .buttons {
         margin-top: 120px;
     }
-
 }

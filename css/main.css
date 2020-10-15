@@ -79,7 +79,7 @@ footer {
   -ms-grid-columns: 25% 25% 25% 25%;
       grid-template-columns: 25% 25% 25% 25%;
       grid-template-areas: "main main main main" "sideleft sideleft sideright sideright" "box1 box1 box1 box1";
-  grid-gap: 20px;
+  grid-gap: 10px;
 }
 
 /* ---------item--------- */
@@ -107,11 +107,7 @@ footer {
   text-align: center;
 }
 
-.main .imgMobile {
-  display: none;
-}
-
-.main img {
+.container-fluid .row .mainMobile {
   display: none;
 }
 
@@ -122,7 +118,7 @@ footer {
   font-family: "Pattaya", sans-serif;
 }
 
-.main #carouselExampleCaptions {
+.main {
   display: block;
 }
 
@@ -146,12 +142,12 @@ footer {
 }
 
 /* ---------box1Mobile--------- */
-.box1Mobile {
+.container-fluid .row .box1Mobile {
   display: none;
 }
 
 /* ---------box2Mobile--------- */
-.box2Mobile {
+.container-fluid .row .box2Mobile {
   display: none;
 }
 
@@ -435,55 +431,32 @@ form {
     font-weight: bold;
   }
   /* ---------container Mobile--------- */
-  .container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    -ms-grid-rows: 40% 30% 30%;
-        grid-template-rows: 40% 30% 30%;
-    -ms-grid-columns: 25% 25% 25% 25%;
-        grid-template-columns: 25% 25% 25% 25%;
-        grid-template-areas: "main main main main" "box1Mobile box1Mobile box1Mobile box1Mobile" "box2Mobile box2Mobile box2Mobile box2Mobile";
-    grid-gap: 20px;
-  }
   /* --------------------------Home mobile page-------------------------- */
   /* ---------mainMobile--------- */
-  .main {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-area: main;
-    border: 3px solid green;
+  .container-fluid .row .mainMobile {
+    display: block;
   }
-  .main h3 {
+  .container-fluid .row .mainMobile h3 {
     font-size: 2em;
     text-align: center;
-  }
-  .main img {
-    display: block;
-  }
-  .main #carouselExampleCaptions {
-    display: none;
+    color: #9453A6;
+    font-family: "Pattaya", sans-serif;
   }
   /* ---------box1Mobile--------- */
-  .box1Mobile {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-area: box1Mobile;
+  .container-fluid .row .box1Mobile {
     display: block;
-    margin: 0 2.5%;
-    border: 3px solid green;
+    margin-top: 30px;
+    left: 0;
   }
   /* ---------box2Mobile--------- */
-  .box2Mobile {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-area: box2Mobile;
+  .container-fluid .row .box2Mobile {
     display: block;
-    margin: 0 2.5%;
-    border: 3px solid green;
+    margin-top: 30px;
+    left: 0;
+  }
+  /*---------hide main---------*/
+  .main {
+    display: none;
   }
   /* ---------Hide sideright--------- */
   .sideright {
