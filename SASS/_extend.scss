@@ -24,6 +24,7 @@ sans-serif;
     box-sizing: border-box;
 }
 
+/* --------------------------Generic items-------------------------- */
 body {
     font-family: $font-text-Roboto;
 }
@@ -54,7 +55,7 @@ button:hover {
     background-color: #a6a802;
 }
 
-/* --------------------------Footer & Header page-------------------------- */
+/* --------------------------Footer & Header-------------------------- */
 .header-background {
     width: 100%;
     height: auto;
@@ -114,11 +115,6 @@ footer {
     color: $color-theme_Colors-3-hex;
     text-align: center;
     display: block;
-
-}
-
-.container-fluid .row .mainMobile {
-    display: none;
 }
 
 .main h3 {
@@ -135,6 +131,11 @@ footer {
 
 .main p {
     font-weight: bold;
+}
+
+/* ---------main mobile--------- */
+.container-fluid .row .mainMobile {
+    display: none;
 }
 
 /* ---------sideright--------- */
@@ -254,7 +255,6 @@ footer {
     transform: scale(1.1);
 }
 
-
 .mediaContainer .mydiv .lightboxcontainer {
     width: 100%;
     text-align: left;
@@ -299,7 +299,7 @@ footer {
     margin: 0 auto;
 }
 
-form {
+.contactUsContainer form {
     background-color: $color-theme_Colors-1-hex;
     padding: 30px;
     border-radius: 10px;
@@ -313,19 +313,19 @@ form {
     font-weight: bold;
 }
 
-.firstName {
+.contactUsContainer #contactUsSubmitForm .form-group .firstName {
     display: block;
 }
 
-.lastName {
+.contactUsContainer #contactUsSubmitForm .form-group .lastName {
     display: block;
 }
 
-.email {
+.contactUsContainer #contactUsSubmitForm .form-group .email {
     display: block;
 }
 
-.comments {
+.contactUsContainer #contactUsSubmitForm .form-group .comments {
     display: block;
 }
 
@@ -413,6 +413,7 @@ form {
 /* ---------------------------------------------------- Mobile ---------------------------------------------------- */
 @media(max-width: 550px) {
 
+    /* --------------------------Footer-------------------------- */
     footer {
         font-size: $font-mobile-base-Size;
         margin-top: 80px;

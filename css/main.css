@@ -8,6 +8,7 @@
           box-sizing: border-box;
 }
 
+/* --------------------------Generic items-------------------------- */
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -38,7 +39,7 @@ button:hover {
   background-color: #a6a802;
 }
 
-/* --------------------------Footer & Header page-------------------------- */
+/* --------------------------Footer & Header-------------------------- */
 .header-background {
   width: 100%;
   height: auto;
@@ -106,10 +107,6 @@ footer {
   display: block;
 }
 
-.container-fluid .row .mainMobile {
-  display: none;
-}
-
 .main h3 {
   margin: 0;
   padding: 0;
@@ -124,6 +121,11 @@ footer {
 
 .main p {
   font-weight: bold;
+}
+
+/* ---------main mobile--------- */
+.container-fluid .row .mainMobile {
+  display: none;
 }
 
 /* ---------sideright--------- */
@@ -301,7 +303,7 @@ footer {
   margin: 0 auto;
 }
 
-form {
+.contactUsContainer form {
   background-color: #9453A6;
   padding: 30px;
   border-radius: 10px;
@@ -315,19 +317,19 @@ form {
   font-weight: bold;
 }
 
-.firstName {
+.contactUsContainer #contactUsSubmitForm .form-group .firstName {
   display: block;
 }
 
-.lastName {
+.contactUsContainer #contactUsSubmitForm .form-group .lastName {
   display: block;
 }
 
-.email {
+.contactUsContainer #contactUsSubmitForm .form-group .email {
   display: block;
 }
 
-.comments {
+.contactUsContainer #contactUsSubmitForm .form-group .comments {
   display: block;
 }
 
@@ -415,6 +417,7 @@ form {
 
 /* ---------------------------------------------------- Mobile ---------------------------------------------------- */
 @media (max-width: 550px) {
+  /* --------------------------Footer-------------------------- */
   footer {
     font-size: 1em;
     margin-top: 80px;
